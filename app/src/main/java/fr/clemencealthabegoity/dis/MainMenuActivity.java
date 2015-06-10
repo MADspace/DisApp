@@ -18,12 +18,11 @@ public class MainMenuActivity extends Activity {
     }
 
     public void onclick_start(View view) {
-        System.out.println("About!");
+        startActivity(new Intent(this, ChooseActivity.class));
     }
 
     public void onclick_timer(View view) {
         startActivity(new Intent(this, TimerActivity.class));
-        finish();
     }
 
     public void onclick_about(View view) {
