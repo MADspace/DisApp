@@ -1,40 +1,23 @@
 package fr.clemencealthabegoity.dis;
 
+import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.app.Activity;
-import android.view.animation.AccelerateInterpolator;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
-import android.view.animation.AnimationSet;
-import android.view.animation.DecelerateInterpolator;
 
-public class MainActivity extends Activity {
+
+public class MainMenuActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        final int speed = 1000;
-
-        Animation fadeCircle = new AlphaAnimation(0.0f, 0.8f);
-        fadeCircle.setDuration(speed);
-
-        Animation fadeTitle = new AlphaAnimation(0, 1);
-        fadeTitle.setDuration(speed);
-        fadeTitle.setStartOffset(speed);
-
-
-        findViewById(R.id.main_disc).setAnimation(fadeCircle);
-        findViewById(R.id.main_dis_title).setAnimation(fadeTitle);
+        setContentView(R.layout.activity_main_menu);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_main_menu, menu);
         return true;
     }
 
