@@ -1,5 +1,6 @@
 package fr.clemencealthabegoity.dis;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,7 +26,22 @@ public class MainActivity extends Activity {
         Animation fadeTitle = new AlphaAnimation(0, 1);
         fadeTitle.setDuration(speed);
         fadeTitle.setStartOffset(speed);
+        fadeTitle.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+            }
 
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                startActivity(new Intent(MainActivity.this, MainMenuActivity.class));
+                finish();
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
 
         findViewById(R.id.main_disc).setAnimation(fadeCircle);
         findViewById(R.id.main_dis_title).setAnimation(fadeTitle);
