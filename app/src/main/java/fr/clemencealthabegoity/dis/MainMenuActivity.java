@@ -1,6 +1,7 @@
 package fr.clemencealthabegoity.dis;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -21,7 +22,8 @@ public class MainMenuActivity extends Activity {
     }
 
     public void onclick_timer(View view) {
-        System.out.println("About!");
+        startActivity(new Intent(this, TimerActivity.class));
+        finish();
     }
 
     public void onclick_about(View view) {
