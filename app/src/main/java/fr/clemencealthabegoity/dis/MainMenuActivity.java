@@ -1,12 +1,14 @@
 package fr.clemencealthabegoity.dis;
 
+import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
-public class MainMenuActivity extends ActionBarActivity {
+public class MainMenuActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,5 +36,17 @@ public class MainMenuActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onclick_start(View view) {
+        System.out.println("About!");
+    }
+
+    public void onclick_timer(View view) {
+        System.out.println("About!");
+    }
+
+    public void onclick_about(View view) {
+        System.out.println("About!");
     }
 }
