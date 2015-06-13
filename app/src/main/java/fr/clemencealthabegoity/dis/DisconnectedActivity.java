@@ -35,6 +35,7 @@ public class DisconnectedActivity extends Activity{
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         startActivity(new Intent(this, FakeResultActivity.class));
+        finish();
         return true;
     }
 }

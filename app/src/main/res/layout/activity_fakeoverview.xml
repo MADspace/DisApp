@@ -24,16 +24,43 @@
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_centerInParent="true"
         android:id="@+id/chill"
-        android:layout_margin="100dp"
-        android:src="@mipmap/fakedis1"/>
+        android:src="@mipmap/fakedis1"
+        android:layout_above="@+id/chill"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_centerInParent="true"
-        android:id="@+id/chill2"
-        android:layout_margin="100dp"
-        android:src="@mipmap/fakedis2"/>
-    </RelativeLayout>
+        android:id="@+id/chill"
+        android:src="@mipmap/fakedis2"
+        android:layout_above="@+id/chill"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/chill"
+        android:src="@mipmap/fakedis3"
+        android:layout_marginBottom="31dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/chill"
+        android:src="@mipmap/fakedis5"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="98dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="55dp" />
+</RelativeLayout>
+
