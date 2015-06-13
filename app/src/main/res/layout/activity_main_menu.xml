@@ -37,4 +37,18 @@
     android:layout_below="@id/button_timer"
         android:src="@mipmap/aboutbutton" />
 
+
+
+    <ImageView
+        android:clickable="true"
+        android:onClick="onclick_about"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionbutton"
+        android:src="@mipmap/questionbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
 </RelativeLayout>
