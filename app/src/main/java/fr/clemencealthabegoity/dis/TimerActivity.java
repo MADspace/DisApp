@@ -1,6 +1,7 @@
 package fr.clemencealthabegoity.dis;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -23,6 +24,10 @@ public class TimerActivity extends Activity implements View.OnTouchListener {
         timerView.setDegreesFilled(180.0f);
 
         timerText = (TextView)findViewById(R.id.timer_text);
+    }
+    public void onclick_start(View view) {
+        startActivity(new Intent(this, ChooseActivity.class));
+        finish();
     }
 
     int i = 0;
