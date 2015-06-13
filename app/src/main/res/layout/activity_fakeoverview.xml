@@ -33,6 +33,7 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_centerInParent="true"
-        android:id="@+id/chill"
+        android:id="@+id/chill2"
         android:layout_margin="100dp"
         android:src="@mipmap/fakedis2"/>
+    </RelativeLayout>

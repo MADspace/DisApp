@@ -41,7 +41,7 @@
 
     <ImageView
         android:clickable="true"
-        android:onClick="onclick_about"
+        android:onClick="onclick_info"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:id="@+id/questionbutton"

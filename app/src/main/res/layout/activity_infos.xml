@@ -24,4 +24,5 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:src="@mipmap/infos"
-        android:id="@+id/imageView2" />
+        android:id="@+id/imageView3" />
+    </RelativeLayout>

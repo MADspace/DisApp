@@ -32,6 +32,22 @@
             android:name=".DisconnectedActivity"
             android:label="Disconnected" >
         </activity>
+        <activity
+        android:name=".FakeResultActivity"
+        android:label="" >
+        </activity>
+        <activity
+            android:name=".FakeOverviewActivity"
+            android:label="" >
+        </activity>
+        <activity
+            android:name=".InfoActivity"
+            android:label="" >
+        </activity>
+        <activity
+            android:name=".BlankActivity"
+            android:label="@string/title_activity_blank" >
+        </activity>
     </application>
 
 </manifest>

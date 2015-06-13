@@ -26,6 +26,11 @@ public class MainMenuActivity extends Activity {
     }
 
     public void onclick_about(View view) {
-        System.out.println("About!");
+
+        startActivity(new Intent(this, FakeOverviewActivity.class));
+    }
+
+    public void onclick_info(View view) {
+        startActivity(new Intent(this, InfoActivity.class));
     }
 }
