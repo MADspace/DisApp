@@ -42,9 +42,4 @@ public class TimerActivity extends Activity implements View.OnTouchListener {
         timerText.setText(minutes + "m");
         return true;
     }
-
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        return super.onTouchEvent(event);
-    }
 }

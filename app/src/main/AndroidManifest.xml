@@ -28,6 +28,10 @@
             android:name=".ChooseActivity"
             android:label="@string/title_activity_choose" >
         </activity>
+        <activity
+            android:name=".DisconnectedActivity"
+            android:label="Disconnected" >
+        </activity>
     </application>
 
 </manifest>

@@ -103,6 +103,7 @@
         android:layout_toRightOf="@id/cook"
         android:layout_below="@id/read"
         android:layout_margin="@dimen/activity_balls"
+        android:onClick="onclick_cook"
         android:src="@mipmap/activity_other"/>
 
     <!-- Skip -->
