@@ -15,13 +15,32 @@
         android:src="@mipmap/text_settime"
         android:id="@+id/imageView2" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_margin="60dp"
-        android:layout_height="wrap_content"
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_centerInParent="true"
-        android:src="@mipmap/timer_round"
-        android:id="@+id/imageView3" />
+        android:id="@+id/timer_parent">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@mipmap/timer_round"
+            android:id="@+id/timer_circle" >
+        </ImageView>
+        <fr.clemencealthabegoity.dis.TimerView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/timer"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/timer_parent"
+        android:text="44m"
+        android:layout_margin="15dp"
+        android:id="@+id/timer_text"
+        android:textSize="50dp"/>
 
     <ImageView
         android:layout_width="50dp"
