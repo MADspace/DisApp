@@ -20,4 +20,23 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:clickable="true"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/fakeresult1"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4" />
+
+    <ImageView
+        android:clickable="true"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/fakeresultround"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView4" />
+
 </RelativeLayout>

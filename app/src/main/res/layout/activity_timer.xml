@@ -8,6 +8,8 @@
     tools:context="fr.clemencealthabegoity.dis.TimerActivity">
 
     <RelativeLayout
+
+
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_centerInParent="true"
@@ -23,6 +25,13 @@
             android:layout_height="fill_parent"
             android:id="@+id/timer"/>
     </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/text_settime"/>
 
     <TextView
         android:layout_width="wrap_content"
