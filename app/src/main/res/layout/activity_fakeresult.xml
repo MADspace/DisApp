@@ -4,7 +4,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:background="#E9EDF3"
+    android:background="#F0F0F0"
     tools:context="fr.clemencealthabegoity.dis.ChooseActivity">
 
 
@@ -12,29 +12,9 @@
 
     <ImageView
         android:clickable="true"
-        android:onClick="onclick_menu"
-        android:layout_width="50dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/menubutton"
-        android:src="@mipmap/menubutton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <ImageView
-        android:clickable="true"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/fakeresult1"
-        android:layout_below="@+id/imageView4"
-        android:layout_alignLeft="@+id/imageView4"
-        android:layout_alignStart="@+id/imageView4" />
-
-    <ImageView
-        android:clickable="true"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/fakeresultround"
+        android:src="@mipmap/newfake_result"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/imageView4" />

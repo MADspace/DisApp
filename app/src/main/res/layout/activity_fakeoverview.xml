@@ -4,64 +4,23 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:background="#E9EDF3"
+    android:background="#F0F0F0"
     tools:context="fr.clemencealthabegoity.dis.ChooseActivity">
-
-
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_margin="60dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:src="@mipmap/julymonth2"
-        android:id="@+id/imageView2" />
 
 
     <!-- Results -->
 
 
     <ImageView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:src="@mipmap/fakedis1"
-        android:id="@+id/imageView5"
-        android:layout_below="@+id/imageView7"
-        android:layout_toLeftOf="@+id/imageView7"
-        android:layout_toStartOf="@+id/imageView7"
-        android:layout_marginTop="56dp" />
-
-
-    <ImageView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:src="@mipmap/fakedis2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:id="@+id/imageView7"
-        android:layout_below="@+id/imageView6"
-        android:layout_alignLeft="@+id/imageView2"
-        android:layout_alignStart="@+id/imageView2" />
+        android:scaleType="centerCrop"
+        android:src="@mipmap/newfake_result2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-
-
-    <ImageView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:src="@mipmap/fakedis3"
-        android:id="@+id/imageView6"
-        android:layout_above="@+id/imageView7"
-        android:layout_alignLeft="@+id/imageView5"
-        android:layout_alignStart="@+id/imageView5" />
-
-    <ImageView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:src="@mipmap/fakedis5"
-        android:layout_below="@+id/imageView2"
-        android:layout_alignLeft="@+id/imageView2"
-        android:layout_alignStart="@+id/imageView2"
-        android:layout_marginLeft="54dp"
-        android:layout_marginStart="54dp"
-        android:id="@+id/imageView6" />
 
 </RelativeLayout>
 

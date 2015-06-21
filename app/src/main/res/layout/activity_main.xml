@@ -6,27 +6,18 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/main_background"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
         android:scaleType="centerCrop"
-        android:src="@mipmap/" />
-
-    <ImageView
-        android:layout_width="200dp"
-        android:alpha="0.8"
-        android:layout_height="wrap_content"
-        android:id="@+id/main_disc"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:src="@mipmap/intro_round" />
+        android:src="@mipmap/newbackgroung"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:id="@+id/main_dis_title"
+        android:src="@mipmap/dis_title"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:src="@mipmap/intro_dis_title" />
-
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

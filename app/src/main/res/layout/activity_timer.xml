@@ -4,7 +4,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:background="#E9EDF3"
+    android:background="#F0F0F0"
     tools:context="fr.clemencealthabegoity.dis.TimerActivity">
 
     <RelativeLayout
@@ -12,46 +12,52 @@
 
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_centerInParent="true"
-        android:id="@+id/timer_parent">
+        android:id="@+id/timer_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
         <ImageView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:src="@mipmap/timer_round"
+            android:src="@mipmap/timer_round2"
             android:id="@+id/timer_circle" >
         </ImageView>
         <fr.clemencealthabegoity.dis.TimerView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:id="@+id/timer"/>
+            android:id="@+id/timer"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
     </RelativeLayout>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="60dp"
-        android:layout_centerHorizontal="true"
-        android:src="@mipmap/text_settime"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/timer_parent"
-        android:text="44m"
-        android:layout_margin="15dp"
+        android:text="44"
         android:id="@+id/timer_text"
-        android:textSize="50dp"/>
+        android:textSize="40sp"
+        android:layout_above="@+id/timer_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp" />
 
     <ImageView
-        android:layout_width="50dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:src="@mipmap/text_settime"
+        android:layout_above="@+id/timer_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:onClick="onclick_timer_circle"
+        android:src="@mipmap/timer_round"
+        android:id="@+id/imageView"
+        android:layout_marginBottom="49dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-    android:onClick="onclick_start"
-        android:layout_centerInParent="true"
-        android:src="@mipmap/timer_start"
-        android:id="@+id/imageView" />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

@@ -25,8 +25,8 @@ public class TimerActivity extends Activity implements View.OnTouchListener {
 
         timerText = (TextView)findViewById(R.id.timer_text);
     }
-    public void onclick_start(View view) {
-        startActivity(new Intent(this, ChooseActivity.class));
+    public void onclick_timer_circle(View view) {
+        startActivity(new Intent(this, DisconnectedActivity.class));
         finish();
     }
 
@@ -40,7 +40,6 @@ public class TimerActivity extends Activity implements View.OnTouchListener {
         double degrees = angle / (Math.PI) * 180.0 + 90.0;
         if(degrees < 0)
             degrees += 360;
-
         timerView.setDegreesFilled((float) degrees);
 
         int minutes = (int)(degrees / 360.0 * 60.0);

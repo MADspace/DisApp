@@ -3,23 +3,22 @@ xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/disconnected_background"
-    android:background="#bfdaff"
+    android:background="#B8C9DF"
     tools:context="fr.clemencealthabegoity.dis.MainMenuActivity">
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:src="@mipmap/gradientbackground"
-        android:id="@+id/sun" />
+        android:id="@+id/sun"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_margin="60dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:src="@mipmap/annoucement"
         android:id="@+id/disconnected_text"
-        />
+        android:layout_below="@+id/sun"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
